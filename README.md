@@ -2,6 +2,7 @@
 
 # Introduction
 Welcome to Whosthatbird-quiz! This project is a simple quiz game that tests your knowledge of bird species by playing you the song or call of a bird and asking you to guess the species name. It was developed as a final project for Harvard's CS50 class 2023 and is a fun way to learn about different bird species and challenge yourself.
+Play it: https://whos-that-bird.onrender.com/
 
 # How to Play
 You will hear a recording of a bird's song or call, and below it, you will see buttons, where you can guess for the species name.
