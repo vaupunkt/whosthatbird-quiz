@@ -1,5 +1,3 @@
 Flask
 requests
 folium
-random
-requests
