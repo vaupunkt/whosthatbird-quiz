@@ -136,11 +136,11 @@ button {
   100% { transform: rotate(0deg); }
 }
 
-
 .main {
     padding: 5px;
-    
+    padding-top: 30px;
 }
+
 .title {
     margin: auto;
     display: flex;
