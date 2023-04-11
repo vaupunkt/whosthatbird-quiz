@@ -1,0 +1,242 @@
+@media only screen and (max-width: 400px) {
+    .title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #whosthat {
+        width: 60%;
+    }
+
+    #bird {
+        margin-top: -20px;
+        width: 20%;
+    }
+
+    .input {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    
+    .quiz {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        aspect-ratio: 1;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #whosthat {
+        width: 80%;
+    }
+
+    #bird {
+        margin-top: -20px;
+        width: 40%;
+    }
+
+    .quiz-shape {
+        clip-path: polygon(100.00% 50.00%,86.80% 53.87%,98.91% 60.40%,85.19% 61.43%,95.68% 70.34%,82.04% 68.50%,90.45% 79.39%,77.50% 74.76%,83.46% 87.16%,71.75% 79.93%,75.00% 93.30%,65.05% 83.80%,65.45% 97.55%,57.69% 86.19%,55.23% 99.73%,50.00% 87.00%,44.77% 99.73%,42.31% 86.19%,34.55% 97.55%,34.95% 83.80%,25.00% 93.30%,28.25% 79.93%,16.54% 87.16%,22.50% 74.76%,9.55% 79.39%,17.96% 68.50%,4.32% 70.34%,14.81% 61.43%,1.09% 60.40%,13.20% 53.87%,0.00% 50.00%,13.20% 46.13%,1.09% 39.60%,14.81% 38.57%,4.32% 29.66%,17.96% 31.50%,9.55% 20.61%,22.50% 25.24%,16.54% 12.84%,28.25% 20.07%,25.00% 6.70%,34.95% 16.20%,34.55% 2.45%,42.31% 13.81%,44.77% 0.27%,50.00% 13.00%,55.23% 0.27%,57.69% 13.81%,65.45% 2.45%,65.05% 16.20%,75.00% 6.70%,71.75% 20.07%,83.46% 12.84%,77.50% 25.24%,90.45% 20.61%,82.04% 31.50%,95.68% 29.66%,85.19% 38.57%,98.91% 39.60%,86.80% 46.13%);
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,247,255,1) 41%, rgba(59,202,221,1) 73%, rgba(0,204,255,1) 100%);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    .input {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    
+    .quiz {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px;
+        padding-top: 110px;
+        padding-bottom: 110px;
+        aspect-ratio: 1;
+    }
+}
+
+@media only screen and (min-width: 721px) {
+    .title {
+        max-width: 700px;
+    }
+
+    #whosthat {
+        width: 60%;
+        height:fit-content;
+    }
+    
+    #bird {
+        width: 30%;
+        height: fit-content;
+    }
+
+    .quiz-shape {
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,247,255,1) 41%, rgba(59,202,221,1) 73%, rgba(0,204,255,1) 100%);
+        clip-path: polygon(100.00% 50.00%,85.87% 53.05%,99.28% 58.45%,84.84% 59.07%,97.14% 66.66%,82.80% 64.83%,93.65% 74.38%,79.83% 70.16%,88.90% 81.41%,75.99% 74.91%,83.03% 87.53%,71.41% 78.94%,76.22% 92.58%,66.21% 82.15%,68.64% 96.39%,60.54% 84.42%,60.53% 98.88%,54.57% 85.71%,52.12% 99.95%,48.47% 85.97%,43.65% 99.60%,42.42% 85.19%,35.36% 97.81%,36.58% 83.40%,27.49% 94.65%,31.12% 80.66%,20.27% 90.20%,26.22% 77.02%,13.90% 84.60%,21.99% 72.62%,8.57% 78.00%,18.57% 67.56%,4.44% 70.60%,16.06% 61.99%,1.61% 62.60%,14.52% 56.08%,0.18% 54.24%,14.00% 50.00%,0.18% 45.76%,14.52% 43.92%,1.61% 37.40%,16.06% 38.01%,4.44% 29.40%,18.57% 32.44%,8.57% 22.00%,21.99% 27.38%,13.90% 15.40%,26.22% 22.98%,20.27% 9.80%,31.12% 19.34%,27.49% 5.35%,36.58% 16.60%,35.36% 2.19%,42.42% 14.81%,43.65% 0.40%,48.47% 14.03%,52.12% 0.05%,54.57% 14.29%,60.53% 1.12%,60.54% 15.58%,68.64% 3.61%,66.21% 17.85%,76.22% 7.42%,71.41% 21.06%,83.03% 12.47%,75.99% 25.09%,88.90% 18.59%,79.83% 29.84%,93.65% 25.62%,82.80% 35.17%,97.14% 33.34%,84.84% 40.93%,99.28% 41.55%,85.87% 46.95%);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        min-width: 500px;
+        min-height: 500px;
+        aspect-ratio: 1/1;
+    }
+    .input {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    
+    .quiz {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px;
+        padding: 50px;
+    }
+}
+
+html, body {
+    background-repeat:no-repeat;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    background: rgb(251,77,0);
+    background: linear-gradient(9deg, rgba(251,77,0,1) 0%, rgba(252,68,0,1) 13%, rgba(255,101,46,1) 16%, rgba(252,65,0,1) 18%, rgba(250,12,12,1) 35%, rgba(233,18,34,1) 49%, rgba(255,127,138,1) 51%, rgba(229,19,39,1) 52%, rgba(222,22,48,1) 58%, rgba(255,94,76,1) 64%, rgba(255,40,0,1) 69%, rgba(255,126,0,1) 100%);
+    background-size: cover;
+    background-attachment: fixed;
+}  
+
+button {
+    animation: wiggle 2.5s infinite;
+}
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+.main {
+    padding: 5px;
+    
+}
+.title {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 400px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: small;
+    line-height: 0.2;
+}
+
+.footer div {
+    margin-top: 15px;
+}
+
+footer a, footer a:hover {
+    color: white;
+}
+
+.input {
+    margin: auto;
+}
+.start {
+    margin: auto;
+    padding-top: 100px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin: 50px;
+    padding-top: 100px;
+}
+.tipp {
+    margin-top: 50px;
+}
+
+.quiz form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form button {
+    margin: 10px;
+}
+
+#loading {
+    width: 35px;
+    height: 35px;
+    display: none;
+    cursor: wait;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+

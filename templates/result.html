@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+
+{% block main %}
+
+<h2>{{ result_message }}</h2>
+
+<div class="start">
+    <div id="loading">
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+    <div id="content">
+        <form method="POST" action="/quiz">
+        <!-- Checkboxes for different countries as options for later implementation
+
+        <label><input type="checkbox" name="options" value="cnt:germany"> Germany</label>
+        <label><input type="checkbox" name="options" value="cnt:france"> France</label>
+        <label><input type="checkbox" name="options" value="cnt:spain"> Spain</label>
+        
+        -->
+
+            <button id="start-quiz" class="btn btn-lg btn-primary" type="submit" onclick="loading();">Try again?</button>
+        </form>
+    </div> 
+    <script type="text/javascript">// <![CDATA[
+    function loading(){
+        $("#loading").show();
+        $("#content").hide();       
+    }
+    // ]]></script>
+</div>
+
+{% endblock %}

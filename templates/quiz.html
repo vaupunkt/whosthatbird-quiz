@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+
+{% block title %}
+    Quiz
+{% endblock %}
+
+{% block main %}
+    <div class="quiz-shape">
+      <div class="quiz">
+        <div id=”audio-player-container”>
+          <audio id="bird-audio" controls autoplay>
+            <source id="bird-audio-source" src="{{ audio_src }}" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <h4>Which bird is making this sound?</h4>
+        <form action="/check_answer" method="post">
+          <button type="submit" class="btn btn-light" name="answer" value="{{ button1 }}">{{ button1 }}</button>
+          <button type="submit" class="btn btn-light" name="answer" value="{{ button2 }}">{{ button2 }}</button>
+          <button type="submit" class="btn btn-light" name="answer" value="{{ button3 }}">{{ button3 }}</button>
+          <button type="submit" class="btn btn-light" name="answer" value="{{ button4 }}">{{ button4 }}</button>
+          <input type="hidden" name="correct_bird_name" value="{{ correct_bird_name }}">
+        </form>
+      </div>
+    </div>
+    <p class="tipp">
+      <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Pssst! Here's a tipp.
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        <div id="map">
+          {{ folium_map | safe }}
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
